@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-### Start with this format...........
-
-# TensorFlow Part-of-Speech Tagger
-
-Simple part-of-speech tagger implemented using a feedforward network in
-Tensorflow.
-
-Done as a homework project for the Natural Language Understanding course at ETH
-Zurich, taught by Prof. Thomas Hofmann and Dr. Massimiliano Ciaramita. Code
-is based on a skeleton provided with the homework by Florian Schmidt.
-
-
-## Usage
-
-First, train the model using `train.py`:
-
-```
-$ python3 train.py
-```
-
-Once you're happy with how well trained the model is, run `demo.py`, input a
-sentence, and see the model annotate it with
-[Penn Treebank](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
-part-of-speech tags:
-
-```
-$ python3 demo.py
-Enter a sentence to be annotated:
-The Carterfone is a device invented by Thomas Carter
-=======
 # Welsh Part-of-Speech and Semantic Tagger 
 
 This is a simple embedding based multi-task tagger for the Welsh part-of-speech and semantic tagging implemented using a feedforward network in Tensorflow.
@@ -105,11 +74,7 @@ Testing after training:
         -loss = 3.628
 ```
 
-
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
-
-
-
 
 ```
 $ python demo_tagger.py
@@ -117,15 +82,7 @@ Enter a sentence to be annotated:
 A fydd rhywfaint o 'r arian hwn yn cael ei ddefnyddio
 i sicrhau bod modd defnyddio tocynnau rhatach yn Lloegr
 yn ogystal ag yng Nghymru?
->>>>>>> c80e988070bd852f3c7d6e689c665520452b735c
-
-Loading saved vocabulary...
-Generating tensors...
-Your sentence, annotated:
-<<<<<<< HEAD
-The/DT Carterfone/NNP is/VBZ a/DT device/NN invented/VBN by/IN Thomas/NNP Carter/NNP
-```
-=======
+--------------
 A|Rha|Z5 fydd|B|A3+ rhywfaint|E|N5/N5.1- o|Ar|Z5 'r|YFB|Z5 arian|E|I1 
 hwn|Rha|A3+ yn|U|Z5 cael|B|A9 ei|Rha|Z8 ddefnyddio|B|A1.5.1 i|Ar|Z5
 sicrhau|B|A7+ bod|B|A3+ modd|E|X4.2 defnyddio|B|A1.5.1 tocynnau|E|Q1.2 
@@ -133,4 +90,3 @@ rhatach|Ans|I1.3- yn|Ar|Z5 Lloegr|E|Z2 yn|Ar|Z5 ogystal|Ans|Z99 ag|Ar|Z5
 yng|Ar|Z5 Nghymru|E|Z2 ?|Atd|PUNCT
 ```
 **Acknowledgement:** This code was originally adapted (but heavily modified) from [mrahtz's](https://github.com/mrahtz/tensorflow-pos-tagger) work on *Tensorflow POS tagger*
->>>>>>> c80e988070bd852f3c7d6e689c665520452b735c
