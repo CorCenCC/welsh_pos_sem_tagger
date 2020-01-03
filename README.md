@@ -13,7 +13,7 @@ The gold standard data, `cy_both_tagged.data`, comprises 611 manually tagged sen
 ### Embedding model
 A key contribution of this work to Welsh NLP research is the application of pre-trained embeddings to build the model. 
 
-To that effect, we used the Welsh pre-trained embedding models built by the [FastText Project](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.cy.300.vec.gz) (Grave et al 2018). 
+To that effect, we used the Welsh pre-trained embedding models built by the [FastText Project (Grave et al 2018)](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.cy.300.vec.gz). 
 
 ### Usage example: Tagger training
 Training the tagger requires a set of input arguments which are listed below
