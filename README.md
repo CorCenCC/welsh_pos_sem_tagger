@@ -73,7 +73,15 @@ Testing after training:
         -acc  = 35.29%
         -loss = 3.628
 ```
+### Usage example: Experiments
+The script `experiment.py` provides an experimental framework that allows for the multiple runs of `train_tagger.py` with pre-defined  sets of parameters values. This can by executed with the following command
 
+```
+$ python path/to/train_tagger.py
+```
+It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output 
+
+### Usage example: Demo
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
 
 ```
@@ -89,4 +97,6 @@ sicrhau|B|A7+ bod|B|A3+ modd|E|X4.2 defnyddio|B|A1.5.1 tocynnau|E|Q1.2
 rhatach|Ans|I1.3- yn|Ar|Z5 Lloegr|E|Z2 yn|Ar|Z5 ogystal|Ans|Z99 ag|Ar|Z5 
 yng|Ar|Z5 Nghymru|E|Z2 ?|Atd|PUNCT
 ```
-**Acknowledgement:** This code was originally adapted (but heavily modified) from [mrahtz's](https://github.com/mrahtz/tensorflow-pos-tagger) work on *Tensorflow POS tagger*
+**Credits:**
+- This work was supervised by [Dr. Paul Rayson](https://www.lancaster.ac.uk/scc/about-us/people/paul-rayson) and leverages a lot the resources built as part of the works on [CyTag](https://github.com/CorCenCC/CyTag) and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) led by [Steven Neale](http://www.corcencc.org/steven-neale/) and [Scott Piao](https://www.lancaster.ac.uk/people-profiles/scott-piao) respectively.
+- This code was originally adapted (but heavily modified) from [mrahtz's](https://github.com/mrahtz/tensorflow-pos-tagger) work on *Tensorflow POS tagger*
