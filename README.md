@@ -73,9 +73,12 @@ Testing after training:
         -acc  = 35.29%
         -loss = 3.628
 ```
-Th above output is only an example and not trained with the optimal parameters. For example, our experiments show that higher values of `nvecs` (from 50 up) will perform significantly better. See our paper, [Leveraging Pre-Trained Embeddings for Welsh Taggers](https://www.aclweb.org/anthology/W19-4332.pdf) for an extended discussion on parameter optimisation for this task.
 
 ### Usage example: Experiments
+The above output is only an example and not trained with the optimal parameters. For example, our experiments show that higher values of `nvecs` (from 50 up) will perform significantly better. See our paper, [Leveraging Pre-Trained Embeddings for Welsh Taggers](https://www.aclweb.org/anthology/W19-4332.pdf) for an extended discussion on parameter optimisation for this task.
+
+![Graph](https://github.com/CorCenCC/welsh_pos_sem_tagger/blob/master/graph.png)
+
 The script `experiment.py` provides an experimental framework that allows for the multiple runs of `train_tagger.py` with pre-defined  sets of parameters values. This can by executed with the following command
 
 ```
