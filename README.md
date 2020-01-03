@@ -46,7 +46,7 @@ Training configuration:
 ----------------------------------------
 Loading filtered embedding models... Done!
 Loading and processing the training data... Done!
-DataLoader() objected returned!
+DataLoader() object returned!
 Preparing training data... Done!
 Preparing evaluation data ...Done!
 Training and evaluation data returned.
