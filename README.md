@@ -62,16 +62,17 @@ Testing before training:
 Epoch 01: Loss = 4.244, Accuracy = 15.378%
 Epoch 02: Loss = 3.969, Accuracy = 20.181%
 --[more results shown here...]
-Epoch 10: Loss = 3.302, Accuracy = 33.760%
+Epoch 100: Loss = 2.148, Accuracy = 50.610%
 ------------------------------------------
--Eval 02: Loss = 3.628, Accuracy = 33.907%
+-Eval 11: Loss = 4.064, Accuracy = 50.161%
 ==========================================
 
 Training details successfully dumped in 'result_dump.pkl'!
 Model training checkpoints stored in the 'checkpoint' folder
 Testing after training:
-        -acc  = 35.29%
-        -loss = 3.628
+	-acc  = 45.94%
+	-loss = 4.064
+
 ```
 
 ### Usage example: Experiments
@@ -84,8 +85,6 @@ The script `experiment.py` provides an experimental framework that allows for th
 ```
 $ python path/to/experiment.py
 ```
-It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output 
-
 
 
 ### Usage example: Demo
