@@ -34,7 +34,7 @@ To train the model with the set of default parameters, simply execute the python
 ```
 $ python path/to/train_tagger.py
 ```
-The expected screen outputs at the `training` stage will be similar to the one shown below:
+A sample of the expected screen outputs at the `training` stage will be similar to the one shown below
 
 ```Running in Eager mode.
 ----------------------------------------
@@ -73,13 +73,17 @@ Testing after training:
         -acc  = 35.29%
         -loss = 3.628
 ```
+Th above output is only an example and not trained with the optimal parameters. For example, our experiments show that higher values of `nvecs` (from 50 up) will perform significantly better. See our paper, [Leveraging Pre-Trained Embeddings for Welsh Taggers](https://www.aclweb.org/anthology/W19-4332.pdf) for an extended discussion on parameter optimisation for this task.
+
 ### Usage example: Experiments
 The script `experiment.py` provides an experimental framework that allows for the multiple runs of `train_tagger.py` with pre-defined  sets of parameters values. This can by executed with the following command
 
 ```
-$ python path/to/train_tagger.py
+$ python path/to/experiment.py
 ```
 It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output 
+
+
 
 ### Usage example: Demo
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
