@@ -15,8 +15,21 @@ A key contribution of this work to Welsh NLP research is the application of pre-
 
 To that effect, we used the Welsh pre-trained embedding models built by the [FastText Project](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.cy.300.vec.gz) (Grave et al 2018). 
 
-### Usage example: Training tagger
-To train the model, execute the python file `train_tagger.py`:
+### Usage example: Tagger training
+Training the tagger requires a set of input arguments which are listed below
+
+ - **-df, --datafile:** raw tagged text file
+ - **-vf, --vecsfile:** embeddings vectors file in text format
+ - **-v, --nvecs:** number of vectors from embedding
+ - **-e, --eval_split:** percentage of data used for evaluation
+ - **-n, --n_epochs:** number of training epochs
+ - **-m, --mini_batch_size:** size of the mini_batch
+ - **-d, --dropout:** percentage dropout rate
+ - **-b, --batchnorm:** with or without batchnormalization
+ - **-rp, --result_point:** numbers of steps before each `training` result display
+ - **-ep, --eval_point:** numbers of steps before each `evaluation` result display
+
+To train the model with the set of default parameters, simply execute the python file `train_tagger.py`:
 
 ```
 $ python path/to/train_tagger.py
