@@ -68,26 +68,34 @@ Testing before training:
 Epoch 01: Loss = 4.244, Accuracy = 15.378%
 Epoch 02: Loss = 3.969, Accuracy = 20.181%
 --[more results shown here...]
-Epoch 10: Loss = 3.302, Accuracy = 33.760%
+Epoch 100: Loss = 2.148, Accuracy = 50.610%
 ------------------------------------------
--Eval 02: Loss = 3.628, Accuracy = 33.907%
+-Eval 11: Loss = 4.064, Accuracy = 50.161%
 ==========================================
 
 Training details successfully dumped in 'result_dump.pkl'!
 Model training checkpoints stored in the 'checkpoint' folder
 Testing after training:
-        -acc  = 35.29%
-        -loss = 3.628
+	-acc  = 45.94%
+	-loss = 4.064
+
 ```
-Th above output is only an example and not trained with the optimal parameters. For example, our experiments show that higher values of `nvecs` (from 50 up) will perform significantly better. See our paper, [Leveraging Pre-Trained Embeddings for Welsh Taggers](https://www.aclweb.org/anthology/W19-4332.pdf) for an extended discussion on parameter optimisation for this task.
 
 ### Usage example: Experiments
+The above output is only an example and not trained with the optimal parameters. For example, our experiments show that higher values of `nvecs` (from 50 up) will perform significantly better. See our paper, [Leveraging Pre-Trained Embeddings for Welsh Taggers](https://www.aclweb.org/anthology/W19-4332.pdf) for an extended discussion on parameter optimisation for this task.
+
+![Graph](https://github.com/CorCenCC/welsh_pos_sem_tagger/blob/master/graph.png)
+
 The script `experiment.py` provides an experimental framework that allows for the multiple runs of `train_tagger.py` with pre-defined  sets of parameters values. This can by executed with the following command
 
 ```
 $ python path/to/experiment.py
 ```
+<<<<<<< HEAD
 It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output
+=======
+
+>>>>>>> 39a3cd741204b1c6b63305e6a87cc31f560aaf1e
 
 ### Usage example: Demo
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
