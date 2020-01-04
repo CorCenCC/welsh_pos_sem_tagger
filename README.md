@@ -92,11 +92,6 @@ The script `experiment.py` provides an experimental framework that allows for th
 ```
 $ python path/to/experiment.py
 ```
-<<<<<<< HEAD
-It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output
-=======
-
->>>>>>> 39a3cd741204b1c6b63305e6a87cc31f560aaf1e
 
 ### Usage example: Demo
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
