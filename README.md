@@ -34,6 +34,12 @@ To train the model with the set of default parameters, simply execute the python
 ```
 $ python path/to/train_tagger.py
 ```
+To change the `nvecs` to 100 for example, you could also use the command
+
+```
+$ python path/to/train_tagger.py -v 100
+```
+
 A sample of the expected screen outputs at the `training` stage will be similar to the one shown below
 
 ```Running in Eager mode.
@@ -81,9 +87,7 @@ The script `experiment.py` provides an experimental framework that allows for th
 ```
 $ python path/to/experiment.py
 ```
-It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output 
-
-
+It iterates through the list of parameter sets calling `train_tagger.py` for each of them. It screen output
 
 ### Usage example: Demo
 When you are satisfied with the training and evaluation results, then run `demo_tagger.py`, input a Welsh sentence to the model see it tagged with the [CyTag](https://github.com/IgnatiusEzeani/CyTag) POS tags and [CySemTag](http://eprints.lancs.ac.uk/123588/1/lrec2018_cysemtagger.pdf) semantic tags
